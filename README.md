@@ -16,7 +16,6 @@ Vi använder `pinMode()` för att ställa in lampan som en utgång:
 `pinMode(LED_BUILTIN, OUTPUT);`
 
 ## Kod med förklaringar
-Koden finns också i filen **Blink.ino**.
 
 ```cpp
 int i = 5;
@@ -44,8 +43,6 @@ void loop() {
 - `myDelay = 50` bestämmer hur länge lampan väntar mellan tändning och släckning.
 - `digitalWrite()` tänder eller släcker lampan.
 - `delay()` gör en paus. `delay(2000)` är två sekunder.
-- `while (i > 0)` upprepar blinkningen så länge `i` är större än noll.
-- `i--` minskar räknaren med ett.
 - `i = 5` börjar om med fem blinkningar.
 
 ## camelCase
