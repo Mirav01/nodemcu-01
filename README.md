@@ -53,7 +53,8 @@ void loop() {
 
 ## **camelCase**
 
-camelCase betyder att ord skrivs ihop utan mellanslag och att ett nytt ord börjar med stor bokstav, till exempel `myDelay`.Avslutning
+camelCase betyder att ord skrivs ihop utan mellanslag och att ett nytt ord börjar med stor bokstav, till exempel `myDelay`.
+Avslutning
 
 
 Genom den här uppgiften har jag lärt mig hur man kan använda kod för att styra en lampa på ett mikroprocessorkort. Jag har också fått lära mig mer om variabler, loopar, funktioner och hur man använder olika kommandon i Arduino.
