@@ -10,8 +10,8 @@ Vi använder NodeMCU med ESP8266. ESP8266 är mikrochipet på kortet som kör pr
 
 ## **Två grundfunktioner i Arduino**
 
-- `setup()` körs en gång bär kortet startar. Här gör vi de nställningar som behövs.
-- `loop()` kör programmet om noch om igen så länge kortet är igång.
+- `setup()` körs en gång bär kortet startar. Här gör vi de inställningar som behövs.
+- `loop()` kör programmet om och om igen så länge kortet är igång.
 ## **Portinitialisering**
 
 Vi använder `pinMode()` för att ställa in lampan så at kortet kan tända och släcka den.
