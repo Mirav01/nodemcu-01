@@ -2,24 +2,19 @@
 
 ## **Översikt**
 
-Programmet får lampan på NodeMCU att blinka fem gånger. Sedan väntar det två sekunder och börjar om.
+Programmet får lampan att blinka flera gånger med hjälp av kod.
 
 ## **Mikroprocessor**
 
-Vi använder NodeMCU med ESP8266. Kortet programmeras med Arduino IDE och har inbyggt Wi-Fi.
+Vi använder NodeMCU med ESP8266. ESP8266 är mikrochipet på kortet som kör programmet. Kortet programmeras med Arduino IDE och har inbyggt Wi-Fi.
 
 ## **Två grundfunktioner i Arduino**
 
-- `setup()` körs en gång när kortet startar. Här ställer vi in lampan.
-- `loop()` körs om och om igen. Här finns programmet som upprepas.
-
+- `setup()` körs en gång bär kortet startar. Här gör vi de nställningar som behövs.
+- `loop()` kör programmet om noch om igen så länge kortet är igång.
 ## **Portinitialisering**
 
-Vi använder `pinMode()` för att ställa in lampan som en utgång:
-
-```cpp
-pinMode(LED_BUILTIN, OUTPUT);
-```
+Vi använder `pinMode()` för att ställa in lampan så at kortet kan tända och släcka den.
 
 `LED_BUILTIN` betyder att vi använder lampan som redan finns på kortet. `OUTPUT` betyder att kortet kan styra lampan.
 
@@ -49,13 +44,12 @@ void loop() {
 }
 ```
 
-- `i = 5` betyder att blinkningen ska upprepas fem gånger.
+- `i = 5` betyder att lampan ska blinka fem gånger. 
 - `myDelay = 50` bestämmer hur länge lampan väntar mellan varje ändring.
 - `digitalWrite()` styr om lampan ska tändas eller släckas.
 - `LOW` tänder lampan och `HIGH` släcker den på vår NodeMCU.
 - `delay()` gör en paus. `delay(2000)` är två sekunder.
-- `i--` minskar räknaren med ett efter varje blinkning.
-- `i = 5` börjar om med fem blinkningar.
+
 
 ## **camelCase**
 
